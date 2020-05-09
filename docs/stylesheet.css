@@ -14,6 +14,14 @@ a:link, a:visited, a:hover, a{
 	text-decoration: none;
 }
 
+a.jud:before{
+	content: '【';
+}
+
+a.jud:after{
+	content: '】';
+}
+
 /* 标题 */
 h1{
 	text-align: center;
@@ -21,14 +29,44 @@ h1{
 
 h2{
 	counter-increment: counter1 1;
+	counter-reset: counter2;
 }
 
 h2:before{
 	content: counter(counter1, cjk-ideographic) '、';
 }
 
+h3{
+	counter-increment: counter2 1;
+	counter-reset: counter3;
+}
+
+h3:before{
+	content: counter(counter2) '、';
+}
+
+h4{
+	counter-increment: counter3 1;
+}
+
+h4:before{
+	content: '（' counter(counter3) '）';
+}
+
+h6{
+	color: grey;
+	font-size: 0.85em;
+	margin-top:	1em;
+	margin-bottom: 0.5em;
+}
+
+h6+p{
+	margin-top:	0;
+}
+
 p{
 	text-align: justify;
+	white-space: pre-line;
 }
 
 /* 内联引用 */
@@ -44,7 +82,17 @@ q{
 /* 法律引用 */
 div.law{
 	white-space: pre-line;
-	font-family: cursive;
+	font-family: cursive, serif;
 	border-left: .25em solid #dfe2e5;
 	padding: 0 1em;
+	margin-bottom: 1em;
+}
+
+div.question{
+	background-color: #f7f7f7;
+	padding: 3px 5px;
+}
+
+div.question .question-title{
+	font-weight: bold;
 }
