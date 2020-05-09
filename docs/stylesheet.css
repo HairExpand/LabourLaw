@@ -1,0 +1,50 @@
+main {
+	max-width: 1012px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+hr{
+	border: none;
+	border-top: 1px solid #eaecef;
+}
+
+a:link, a:visited, a:hover, a{
+	color: #337ab7;
+	text-decoration: none;
+}
+
+/* 标题 */
+h1{
+	text-align: center;
+}
+
+h2{
+	counter-increment: counter1 1;
+}
+
+h2:before{
+	content: counter(counter1, cjk-ideographic) '、';
+}
+
+p{
+	text-align: justify;
+}
+
+/* 内联引用 */
+q{
+	font-style: italic;
+}
+
+/* 重点 */
+.strong{
+	font-weight: bold;
+}
+
+/* 法律引用 */
+div.law{
+	white-space: pre-line;
+	font-family: cursive;
+	border-left: .25em solid #dfe2e5;
+	padding: 0 1em;
+}
