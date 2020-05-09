@@ -16,10 +16,12 @@ a:link, a:visited, a:hover, a{
 
 a.jud:before{
 	content: '【';
+	color: black;
 }
 
 a.jud:after{
 	content: '】';
+	color: black;
 }
 
 /* 标题 */
@@ -53,6 +55,15 @@ h4:before{
 	content: '（' counter(counter3) '）';
 }
 
+h5{
+	counter-increment: counter4 1;
+	font-size: 0.9em;
+}
+
+h5:before{
+	content: '【' counter(counter4) '】';
+}
+
 h6{
 	color: grey;
 	font-size: 0.85em;
@@ -67,6 +78,10 @@ h6+p{
 p{
 	text-align: justify;
 	white-space: pre-line;
+}
+
+p+ul, p+ol{
+	margin-top: -0.5em;
 }
 
 /* 内联引用 */
@@ -90,6 +105,7 @@ div.law{
 
 div.question{
 	background-color: #f7f7f7;
+	border-radius: 4px;
 	padding: 3px 5px;
 }
 

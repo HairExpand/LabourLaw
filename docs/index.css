@@ -1,0 +1,31 @@
+.index>ol{
+	padding-left: 0;
+}
+
+.index>ol>li{
+	counter-increment: counter1 1;
+	list-style-type: none;
+}
+.index>ol>li:before{
+	content: "第" counter(counter1) "部分 ";
+}
+
+.index>ol>li>ol>li{
+	counter-increment: counter2 1;
+	list-style-type: none;
+}
+.index>ol>li>ol>li:before{
+	content: counter(counter2, cjk-ideographic) "、";
+}
+
+.index>ol>li>ol>li>ol>li{
+	counter-increment: counter3 1;
+	list-style-type: none;
+}
+.index>ol>li>ol>li>ol>li:before{
+	content: counter(counter3) ". ";
+}
+
+.index>ol>li>ol>li>ol>li>ol>li{
+	list-style-type: disc;
+}
