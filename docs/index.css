@@ -7,7 +7,7 @@
 	list-style-type: none;
 }
 .index>ol>li:before{
-	content: "第" counter(counter1) "部分 ";
+	content: "第" counter(counter1, cjk-ideographic) "部分 ";
 }
 
 .index>ol>li>ol>li{
