@@ -44,7 +44,7 @@ h3{
 }
 
 h3:before{
-	content: counter(counter2) '. ';
+	content: counter(counter1) '.' counter(counter2) ' ';
 }
 
 h4{
@@ -89,6 +89,21 @@ q{
 	font-style: italic;
 }
 
+/* 表格 */
+table{
+	border-collapse: collapse;
+}
+
+table tbody tr:nth-child(2n){
+	background-color: #f6f8fa;
+}
+
+table td,
+table th{
+	border: 1px solid #dfe2e5;
+	padding: 6px 13px;
+}
+
 /* 重点 */
 .strong{
 	font-weight: bold;
@@ -111,5 +126,6 @@ div.question, div.example{
 }
 
 div.question .question-title{
+	margin-bottom:	1em;
 	font-weight: bold;
 }
