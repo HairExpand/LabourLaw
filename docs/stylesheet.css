@@ -84,6 +84,14 @@ p+ul, p+ol{
 	margin-top: -0.5em;
 }
 
+code{
+	display: block;
+	font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+	background-color: #f6f8fa;
+	padding: 8px 16px;
+	white-space: pre;
+}
+
 /* 内联引用 */
 q{
 	font-style: italic;
