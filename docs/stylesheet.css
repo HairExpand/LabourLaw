@@ -49,10 +49,12 @@ h3:before{
 
 h4{
 	counter-increment: counter3 1;
+	font-size: 1.1em;
+	counter-reset: counter4;
 }
 
 h4:before{
-	content: '（' counter(counter3) '）';
+	content: '（' counter(counter1) '.' counter(counter2) '.' counter(counter3) '）';
 }
 
 h5{
