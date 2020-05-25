@@ -92,6 +92,7 @@ code{
 	background-color: #f6f8fa;
 	padding: 8px 16px;
 	white-space: pre-wrap;
+	margin-bottom: 1em;
 }
 
 /* 内联引用 */
@@ -103,6 +104,7 @@ q{
 table{
 	border-collapse: collapse;
 	margin-bottom: 1em;
+	max-width: 100%;
 }
 
 table tbody tr:nth-child(2n){
@@ -113,6 +115,11 @@ table td,
 table th{
 	border: 1px solid #dfe2e5;
 	padding: 6px 13px;
+}
+
+.table-wrap{
+	width:	100%;
+	overflow-x: auto;
 }
 
 /* 重点 */
