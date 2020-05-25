@@ -91,7 +91,7 @@ code{
 	font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 	background-color: #f6f8fa;
 	padding: 8px 16px;
-	white-space: pre;
+	white-space: pre-wrap;
 }
 
 /* 内联引用 */
