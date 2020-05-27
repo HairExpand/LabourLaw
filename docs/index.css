@@ -11,11 +11,9 @@
 }
 
 .index>ol>li>ol>li{
-	counter-increment: counter2 1;
 	list-style-type: none;
 }
 .index>ol>li>ol>li:before{
-	content: counter(counter2, cjk-ideographic) "、";
 	width: 3em;
 	display: inline-block;
 	text-align: right;
