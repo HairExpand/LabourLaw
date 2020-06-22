@@ -1,32 +1,53 @@
+.index ol{
+	padding-left: 1.5em;
+}
+
 .index>ol{
 	padding-left: 0;
 }
 
-.index>ol>li{
-	counter-increment: counter1 1;
+li{
+	list-style-type: disc;
+}
+
+li.order{
 	list-style-type: none;
 }
-.index>ol>li:before{
+
+.index>ol>li.order{
+	counter-increment: counter1 1;
+	font-size: 19px;
+}
+.index>ol>li.order:before{
 	content: "第" counter(counter1, cjk-ideographic) "部分 ";
 }
 
-.index>ol>li>ol>li{
-	list-style-type: none;
+.index>ol>li>ol>li.order{
+	counter-increment: counter2 1;
+	font-size: 18px;
 }
-.index>ol>li>ol>li:before{
+.index>ol>li>ol>li.order:before{
 	width: 3em;
 	display: inline-block;
 	text-align: right;
 }
 
-.index>ol>li>ol>li>ol>li{
+.index>ol>li>ol>li>ol>li.order{
 	counter-increment: counter3 1;
-	list-style-type: none;
+	font-size: 17px;
 }
-.index>ol>li>ol>li>ol>li:before{
+.index>ol>li>ol>li>ol>li.order:before{
 	content: counter(counter3) ". ";
 }
 
-.index>ol>li>ol>li>ol>li>ol>li{
-	list-style-type: disc;
+.index>ol>li>ol>li>ol>li>ol>li.order{
+	counter-increment: counter4 1;
+	font-size: 16px;
+}
+.index>ol>li>ol>li>ol>li>ol>li.order:before{
+	content: "（" counter(counter4) "）";
+}
+
+.index>ol>li>ol>li>ol>li>ol>li>ol{
+	padding-left: 3.5em;
 }
