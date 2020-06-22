@@ -127,6 +127,10 @@ table th{
 	font-weight: bold;
 }
 
+img{
+	max-width: 100%;
+}
+
 /* 法律引用 */
 div.law{
 	white-space: pre-line;
@@ -146,4 +150,8 @@ div.question, div.example{
 div.question .question-title{
 	margin-bottom:	1em;
 	font-weight: bold;
+}
+
+.center{
+	text-align: center;
 }
