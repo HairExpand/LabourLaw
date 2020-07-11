@@ -67,10 +67,14 @@ h5:before{
 }
 
 h6{
-	color: grey;
+	font-weight: bold;
 	font-size: 1em;
 	margin-top:	1em;
 	margin-bottom: 0.5em;
+}
+
+h6:before{
+	content: "❉";
 }
 
 h6+p{
@@ -145,6 +149,10 @@ div.question, div.example{
 	border-radius: 4px;
 	padding: 3px 5px;
 	margin-bottom: 1em;
+}
+
+div.question{
+	border: 1px solid black;
 }
 
 div.question .question-title{
