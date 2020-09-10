@@ -121,6 +121,10 @@ table th{
 	padding: 6px 13px;
 }
 
+table caption{
+	font-weight: bold;
+}
+
 .table-wrap{
 	width:	100%;
 	overflow-x: auto;
