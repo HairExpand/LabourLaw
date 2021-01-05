@@ -171,3 +171,16 @@ div.question .question-title{
 .right{
 	text-align: right;
 }
+
+.anchor>div{
+	width: 50%;
+	display: inline-block;
+}
+
+.anchor>div:nth-child(1){
+	text-align: left;
+}
+
+.anchor>div:nth-child(2){
+	text-align: right;
+}

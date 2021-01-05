@@ -6,12 +6,16 @@
 	padding-left: 0;
 }
 
-li{
+li.order{
+	list-style-type: none;
+}
+
+li.example{
 	list-style-type: disc;
 }
 
-li.order{
-	list-style-type: none;
+li.example>a{
+	color: gray;
 }
 
 .index>ol>li.order{
