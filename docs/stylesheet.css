@@ -109,6 +109,7 @@ table{
 	border-collapse: collapse;
 	margin-bottom: 1em;
 	max-width: 100%;
+	margin: auto;
 }
 
 table tbody tr:nth-child(2n){
@@ -123,6 +124,7 @@ table th{
 
 table caption{
 	font-weight: bold;
+	white-space: nowrap;
 }
 
 .table-wrap{
@@ -145,23 +147,36 @@ div.law{
 	font-family: cursive, serif;
 	border-left: .25em solid #dfe2e5;
 	padding: 0 1em;
+	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-div.question, div.example{
+div.question, 
+div.example, 
+div.local,
+div.special,
+div.document{
 	background-color: #f7f7f7;
 	border-radius: 4px;
 	padding: 3px 5px;
+	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-div.question{
+div.question,
+div.local{
 	border: 1px solid black;
 }
 
-div.question .question-title{
-	margin-bottom:	1em;
+div.question .question-title,
+div.local .local-title,
+div.example .example-title,
+div.document .document-title{
 	font-weight: bold;
+	background-color: #f7f7f7;
+	display: inline-block;
+	margin-top: -15px;
+	margin-left: 2em;
 }
 
 .center{
