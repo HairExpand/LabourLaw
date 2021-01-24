@@ -77,6 +77,10 @@ h6:before{
 	content: "❉";
 }
 
+div.local h6:before{
+	content: '';
+}
+
 h6+p{
 	margin-top:	0;
 }
@@ -109,7 +113,7 @@ table{
 	border-collapse: collapse;
 	margin-bottom: 1em;
 	max-width: 100%;
-	margin: auto;
+	margin: 1em auto;
 }
 
 table tbody tr:nth-child(2n){
@@ -198,4 +202,8 @@ div.document .document-title{
 
 .anchor>div:nth-child(2){
 	text-align: right;
+}
+
+aside{
+	padding-left: 2em;
 }
