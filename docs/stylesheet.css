@@ -32,6 +32,7 @@ h1{
 h2{
 	counter-increment: counter1 1;
 	counter-reset: counter2 counter3 counter4;
+	font-size: 1.5em;
 }
 
 h2:before{
@@ -41,6 +42,7 @@ h2:before{
 h3{
 	counter-increment: counter2 1;
 	counter-reset: counter3 counter4;
+	font-size: 1.3em;
 }
 
 h3:before{
