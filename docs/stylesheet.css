@@ -37,7 +37,7 @@ h2{
 
 h2:before{
 	content: counter(counter1, cjk-ideographic) '、';
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 h3{
@@ -48,7 +48,7 @@ h3{
 
 h3:before{
 	content: counter(counter1) '.' counter(counter2) ' ';
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 h4{
@@ -59,7 +59,7 @@ h4{
 
 h4:before{
 	content: '（' counter(counter1) '.' counter(counter2) '.' counter(counter3) '）';
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 h5{
