@@ -37,6 +37,7 @@ h2{
 
 h2:before{
 	content: counter(counter1, cjk-ideographic) '、';
+	font-size: 1.5em;
 }
 
 h3{
@@ -47,16 +48,18 @@ h3{
 
 h3:before{
 	content: counter(counter1) '.' counter(counter2) ' ';
+	font-size: 1.3em;
 }
 
 h4{
 	counter-increment: counter3 1;
-	font-size: 1.1em;
 	counter-reset: counter4;
+	font-size: 1.1em;
 }
 
 h4:before{
 	content: '（' counter(counter1) '.' counter(counter2) '.' counter(counter3) '）';
+	font-size: 1.1em;
 }
 
 h5{
@@ -66,6 +69,7 @@ h5{
 
 h5:before{
 	content: '【' counter(counter4) '】';
+	font-size: 1em;
 }
 
 h6{
@@ -77,6 +81,7 @@ h6{
 
 h6:before{
 	content: "❉";
+	font-size: 1em;
 }
 
 div.local h6:before{
