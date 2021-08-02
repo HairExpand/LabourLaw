@@ -175,7 +175,8 @@ div.document{
 }
 
 div.question,
-div.local{
+div.local,
+div.example{
 	border: 1px solid black;
 }
 
