@@ -155,7 +155,7 @@ img{
 /* 法律引用 */
 div.law{
 	white-space: pre-line;
-	font-family: cursive, serif;
+	font-family: serif, cursive;
 	border-left: .25em solid #dfe2e5;
 	padding: 0 1em;
 	margin-top: 1em;
