@@ -143,6 +143,10 @@ table caption{
 	overflow-x: auto;
 }
 
+table.center{
+	text-align: center;
+}
+
 /* 重点 */
 .strong{
 	font-weight: bold;
