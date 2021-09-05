@@ -216,6 +216,11 @@ div.document .document-title{
 	text-align: right;
 }
 
+.small,
+sup{
+	font-size: 75%;
+}
+
 aside{
 	padding-left: 2em;
 }
