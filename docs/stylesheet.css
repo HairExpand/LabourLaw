@@ -133,8 +133,16 @@ table th{
 	padding: 6px 13px;
 }
 
+table th{
+	white-space: nowrap;
+}
+
 table caption{
 	font-weight: bold;
+	white-space: nowrap;
+}
+
+table.nowrap td{
 	white-space: nowrap;
 }
 
@@ -154,6 +162,10 @@ table.center{
 
 img{
 	max-width: 100%;
+}
+
+.img-wrap{
+	text-align: center;
 }
 
 /* 法律引用 */
