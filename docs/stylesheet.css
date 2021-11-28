@@ -84,7 +84,8 @@ h6:before{
 	font-size: 1em;
 }
 
-div.local h6:before{
+div.local h6:before,
+div.example h6:before{
 	content: '';
 }
 
