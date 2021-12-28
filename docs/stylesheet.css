@@ -197,6 +197,10 @@ div.example{
 	border: 1px solid black;
 }
 
+div.local hr{
+	border-top: 1px solid black;
+}
+
 div.question .question-title,
 div.local .local-title,
 div.example .example-title,
